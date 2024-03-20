@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Character Creator</title>
+        <link rel="stylesheet" href="main.css">
+        <script src="originPage.js"></script>
+    </head>
+    <header>
+        <div id="headerLinks">
+            <button type="button" onclick="window.location.href='homePage.html';">Home</button>
+            <button type="button" onclick="window.location.href='classPage.html';">Class</button>
+            <button type="button" onclick="window.location.href='originPage.html';">Origin</button>
+            <button type="button" onclick="pageChange('abilitiesPage')">Abilities</button>
+            <button type="button" onclick="pageChange('equipmentPage')">Equipment</button>
+        </div>
+    </header>
+    <body>
+        <div id="originPage">
+            <div id="raceSelection">
+                Race
+                <input type="search" name="Race Search" id="raceSearch" placeholder="Search..." onkeyup="raceSearch()">
+                <div class="raceSelection" id="dragonbornSelection">
+                    Dragonborn
+                </div>
+                <div class="raceSelection" id="dwarfSelection">
+                    Dwarf
+                </div>
+                <div class="raceSelection" id="elfSelection">
+                    Elf
+                </div>
+                <div class="raceSelection" id="half-elfSelection">
+                    Half-Elf
+                </div>
+                <div class="raceSelection" id="half-orcSelection">
+                    Half-Orc
+                </div>
+                <div class="raceSelection" id="halflingSelection">
+                    Halfling
+                </div>
+                <div class="raceSelection" id="humanSelection">
+                    Human
+                </div>
+                <div class="raceSelection" id="gnomeSelection">
+                    Gnome
+                </div>
+                <div class="raceSelection" id="tieflingSelection">
+                    Tiefling
+                </div>
+            </div>
+            <div id="backgroundSelection">
+                Background
+            </div>
+        </div>
+    </body>
+</html>

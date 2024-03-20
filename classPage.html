@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Character Creator</title>
+        <link rel="stylesheet" href="main.css">
+        <script src="classPage.js"></script>
+    </head>
+    <header>
+        <div id="headerLinks">
+            <button type="button" onclick="window.location.href='homePage.html';">Home</button>
+            <button type="button" onclick="window.location.href='classPage.html';">Class</button>
+            <button type="button" onclick="window.location.href='originPage.html';">Origin</button>
+            <button type="button" onclick="pageChange('abilitiesPage')">Abilities</button>
+            <button type="button" onclick="pageChange('equipmentPage')">Equipment</button>
+        </div>
+    </header>
+    <body>
+        <div id="classPage">
+            Choose a Class
+            <input type="search" name="Class Search" id="classSearch" placeholder="Search..." onkeyup="classSearch()">
+            <div class="classSelection" id="artificerSelection">
+                Artificer
+            </div>
+            <div class="classSelection" id="barbarianSelection">
+                Barbarian
+            </div>
+            <div class="classSelection" id="bardSelection">
+                Bard
+            </div>
+            <div class="classSelection" id="clericSelection">
+                Cleric
+            </div>
+            <div class="classSelection" id="druidSelection">
+                Druid
+            </div>
+            <div class="classSelection" id="fighterSelection">
+                Fighter
+            </div>
+            <div class="classSelection" id="monkSelection">
+                Monk
+            </div>
+            <div class="classSelection" id="paladinSelection">
+                Paladin
+            </div>
+            <div class="classSelection" id="rangerSelection">
+                Ranger
+            </div>
+            <div class="classSelection" id="rogueSelection">
+                Rogue
+            </div>
+            <div class="classSelection" id="sorcererSelection">
+                Sorcerer
+            </div>
+            <div class="classSelection" id="warlockSelection">
+                Warlock
+            </div>
+            <div class="classSelection" id="wizardSelection">
+                Wizard
+            </div>
+        </div>
+    </body>
+</html>
