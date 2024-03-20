@@ -6,14 +6,19 @@
     border-radius: 5px;
     width: 30%;
     position: relative;
+    font-size: 18px;
+    font-weight: bold;
+    text-transform: uppercase;
 }.hidden {
     display: none;
 }
-.classSelection img, .classSelection svg {
-    height: 20px;
-    margin: 3px;
+.classSelection img {
+    height: 40px;
+    margin: 10px;
+    border-radius: 3px;
 }
 .classSelection svg {
+    height: 20px;
     position: absolute;
-    right: 2px;
+    right: 20px;
 }
