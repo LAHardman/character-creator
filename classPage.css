@@ -1,0 +1,9 @@
+.classSelection {
+    height: auto;
+    display: flex;
+    align-items: center;
+}
+.classSelection img, .classSelection svg {
+    height: 20px;
+    margin: 3px;
+}
