@@ -12,3 +12,15 @@ function classSearch() {
         }
     }
 }
+function classSelect(selectedClass) {
+    let previousSelection = document.getElementById('selected')
+    if (previousSelection) {
+        previousSelection.removeAttribute('id');
+        if(selectedClass!=previousSelection) {
+            selectedClass.id = 'selected';
+        }
+    } else {
+        selectedClass.id = 'selected';
+
+    }
+}
