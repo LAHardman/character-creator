@@ -11,6 +11,9 @@
     text-transform: uppercase;
     cursor: pointer;
 }
+.classLabel {
+    cursor: pointer;
+}
 .hidden {
     display: none;
 }
