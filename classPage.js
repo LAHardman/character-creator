@@ -1,3 +1,12 @@
+window.onload = function() {
+    let classSelections = document.getElementsByClassName('classSelection');
+    for (let i = 0; i < classSelections.length; i++) {
+        classSelections[i].addEventListener('click', function() {
+            classSelect(this);
+        }, false);
+    }
+}
+
 function classSearch() {
     let input = document.getElementById('classSearch').value
     input = input.toLowerCase();
