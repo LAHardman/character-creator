@@ -1,4 +1,4 @@
-.classSelection {
+.selection {
     height: auto;
     display: flex;
     align-items: center;
@@ -10,25 +10,8 @@
     font-weight: bold;
     text-transform: uppercase;
     cursor: pointer;
+    margin: 10px 0;
 }
 .classLabel {
     cursor: pointer;
-}
-.hidden {
-    display: none;
-}
-.classSelection img {
-    height: 40px;
-    margin: 10px;
-    border-radius: 3px;
-}
-.classSelection svg {
-    height: 20px;
-    position: absolute;
-    right: 20px;
-    transition: transform 0.5s, fill 0.5s;
-}
-#selected svg {
-    transform: rotate(-90deg);
-    fill: rgb(100, 200, 255);
 }

@@ -30,9 +30,6 @@ header button:hover {
     text-shadow: none;
     border-bottom: 2px solid rgb(100, 200, 255);
 }
-.hidden {
-    display: none;
-}
 body {
     margin: 50px 10% 0px 10%;
 }
@@ -41,4 +38,36 @@ body {
     margin-right: auto;
     width: -moz-fit-content;
     width: fit-content;
+}
+.selection {
+    height: auto;
+    display: flex;
+    align-items: center;
+    border: 1px solid rgb(177, 177, 177);
+    border-radius: 5px;
+    width: 30%;
+    position: relative;
+    font-size: 18px;
+    font-weight: bold;
+    text-transform: uppercase;
+    cursor: pointer;
+    margin: 10px 0;
+}
+.selection img {
+    height: 40px;
+    margin: 10px;
+    border-radius: 3px;
+}
+.selection svg {
+    height: 20px;
+    position: absolute;
+    right: 20px;
+    transition: transform 0.5s, fill 0.5s;
+}
+.hidden {
+    display: none;
+}
+#selected svg {
+    transform: rotate(-90deg);
+    fill: rgb(100, 200, 255);
 }

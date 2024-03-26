@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Character Creator</title>
+        <link rel="stylesheet" href="../css/main.css">
+        <link rel="stylesheet" href="../css/originPage.css">
+        <script src="../javascript/pages/originPage.js"></script>
+    </head>
+    <header>
+        <div id="headerLinks">
+            <button type="button">Home</button>
+            <button type="button">Class</button>
+            <button type="button" id="activeTab">Origin</button>
+            <button type="button">Abilities</button>
+            <button type="button">Equipment</button>
+        </div>
+    </header>
+    <body>
+        <div id="originPage">
+            <div id="raceSelection">
+                Race
+                <input type="search" name="Race Search" class="searchBar" placeholder="Search...">
+                <div class="selection searchResult" id="dragonbornSelection">
+                    <img src="../images/icons/races/dragonborn-icon.webp" alt="Dragonborn Icon">
+                    <label>Dragonborn</label>
+                    <svg viewBox="0 0 1792 1792" xmlns="http://www.w3.org/2000/svg">
+                        <path fill="#fffffff" d="M1683,653.5l-742,741c-12.7,12.7-27.7,19-45,19s-32.3-6.3-45-19l-742-741c-12.7-12.7-19-27.8-19-45.5 s6.3-32.8,19-45.5l166-165c12.7-12.7,27.7-19,45-19s32.3,6.3,45,19l531,531l531-531c12.7-12.7,27.7-19,45-19s32.3,6.3,45,19l166,165 c12.7,12.7,19,27.8,19,45.5S1695.7,640.8,1683,653.5z"></path>
+                    </svg>
+                </div>
+                <div class="selection searchResult" id="dwarfSelection">
+                    <img src="../images/icons/races/dwarf-icon.webp" alt="Dwarf Icon">
+                    <label>Dwarf</label>
+                    <svg viewBox="0 0 1792 1792" xmlns="http://www.w3.org/2000/svg">
+                        <path fill="#fffffff" d="M1683,653.5l-742,741c-12.7,12.7-27.7,19-45,19s-32.3-6.3-45-19l-742-741c-12.7-12.7-19-27.8-19-45.5 s6.3-32.8,19-45.5l166-165c12.7-12.7,27.7-19,45-19s32.3,6.3,45,19l531,531l531-531c12.7-12.7,27.7-19,45-19s32.3,6.3,45,19l166,165 c12.7,12.7,19,27.8,19,45.5S1695.7,640.8,1683,653.5z"></path>
+                    </svg>
+                </div>
+                <div class="selection searchResult" id="elfSelection">
+                    <img src="../images/icons/races/elf-icon.webp" alt="Elf Icon">
+                    <label>Elf</label>
+                    <svg viewBox="0 0 1792 1792" xmlns="http://www.w3.org/2000/svg">
+                        <path fill="#fffffff" d="M1683,653.5l-742,741c-12.7,12.7-27.7,19-45,19s-32.3-6.3-45-19l-742-741c-12.7-12.7-19-27.8-19-45.5 s6.3-32.8,19-45.5l166-165c12.7-12.7,27.7-19,45-19s32.3,6.3,45,19l531,531l531-531c12.7-12.7,27.7-19,45-19s32.3,6.3,45,19l166,165 c12.7,12.7,19,27.8,19,45.5S1695.7,640.8,1683,653.5z"></path>
+                    </svg>
+                </div>
+                <div class="selection searchResult" id="half-elfSelection">
+                    <img src="../images/icons/races/half-elf-icon.webp" alt="Half-Elf Icon">
+                    <label>Half-Elf</label> 
+                    <svg viewBox="0 0 1792 1792" xmlns="http://www.w3.org/2000/svg">
+                        <path fill="#fffffff" d="M1683,653.5l-742,741c-12.7,12.7-27.7,19-45,19s-32.3-6.3-45-19l-742-741c-12.7-12.7-19-27.8-19-45.5 s6.3-32.8,19-45.5l166-165c12.7-12.7,27.7-19,45-19s32.3,6.3,45,19l531,531l531-531c12.7-12.7,27.7-19,45-19s32.3,6.3,45,19l166,165 c12.7,12.7,19,27.8,19,45.5S1695.7,640.8,1683,653.5z"></path>
+                    </svg>
+                </div>
+                <div class="selection searchResult" id="half-orcSelection">
+                    <img src="../images/icons/races/half-orc-icon.webp" alt="Half-Orc Icon">
+                    <label>Half-Orc</label>
+                    <svg viewBox="0 0 1792 1792" xmlns="http://www.w3.org/2000/svg">
+                        <path fill="#fffffff" d="M1683,653.5l-742,741c-12.7,12.7-27.7,19-45,19s-32.3-6.3-45-19l-742-741c-12.7-12.7-19-27.8-19-45.5 s6.3-32.8,19-45.5l166-165c12.7-12.7,27.7-19,45-19s32.3,6.3,45,19l531,531l531-531c12.7-12.7,27.7-19,45-19s32.3,6.3,45,19l166,165 c12.7,12.7,19,27.8,19,45.5S1695.7,640.8,1683,653.5z"></path>
+                    </svg>
+                </div>
+                <div class="selection searchResult" id="halflingSelection">
+                    <img src="../images/icons/races/halfling-icon.webp" alt="Halfling Icon">
+                    <label>Halfling</label>
+                    <svg viewBox="0 0 1792 1792" xmlns="http://www.w3.org/2000/svg">
+                        <path fill="#fffffff" d="M1683,653.5l-742,741c-12.7,12.7-27.7,19-45,19s-32.3-6.3-45-19l-742-741c-12.7-12.7-19-27.8-19-45.5 s6.3-32.8,19-45.5l166-165c12.7-12.7,27.7-19,45-19s32.3,6.3,45,19l531,531l531-531c12.7-12.7,27.7-19,45-19s32.3,6.3,45,19l166,165 c12.7,12.7,19,27.8,19,45.5S1695.7,640.8,1683,653.5z"></path>
+                    </svg>
+                </div>
+                <div class="selection searchResult" id="humanSelection">
+                    <img src="../images/icons/races/human-icon.webp" alt="Human Icon">
+                    <label>Human</label>
+                    <svg viewBox="0 0 1792 1792" xmlns="http://www.w3.org/2000/svg">
+                        <path fill="#fffffff" d="M1683,653.5l-742,741c-12.7,12.7-27.7,19-45,19s-32.3-6.3-45-19l-742-741c-12.7-12.7-19-27.8-19-45.5 s6.3-32.8,19-45.5l166-165c12.7-12.7,27.7-19,45-19s32.3,6.3,45,19l531,531l531-531c12.7-12.7,27.7-19,45-19s32.3,6.3,45,19l166,165 c12.7,12.7,19,27.8,19,45.5S1695.7,640.8,1683,653.5z"></path>
+                    </svg>
+                </div>
+                <div class="selection searchResult" id="gnomeSelection">
+                    <img src="../images/icons/races/gnome-icon.webp" alt="Gnome Icon">
+                    <label>Gnome</label>
+                    <svg viewBox="0 0 1792 1792" xmlns="http://www.w3.org/2000/svg">
+                        <path fill="#fffffff" d="M1683,653.5l-742,741c-12.7,12.7-27.7,19-45,19s-32.3-6.3-45-19l-742-741c-12.7-12.7-19-27.8-19-45.5 s6.3-32.8,19-45.5l166-165c12.7-12.7,27.7-19,45-19s32.3,6.3,45,19l531,531l531-531c12.7-12.7,27.7-19,45-19s32.3,6.3,45,19l166,165 c12.7,12.7,19,27.8,19,45.5S1695.7,640.8,1683,653.5z"></path>
+                    </svg>
+                </div>
+                <div class="selection searchResult" id="tieflingSelection">
+                    <img src="../images/icons/races/tiefling-icon.webp" alt="Tiefling Icon">
+                    <label>Tiefling</label>
+                    <svg viewBox="0 0 1792 1792" xmlns="http://www.w3.org/2000/svg">
+                        <path fill="#fffffff" d="M1683,653.5l-742,741c-12.7,12.7-27.7,19-45,19s-32.3-6.3-45-19l-742-741c-12.7-12.7-19-27.8-19-45.5 s6.3-32.8,19-45.5l166-165c12.7-12.7,27.7-19,45-19s32.3,6.3,45,19l531,531l531-531c12.7-12.7,27.7-19,45-19s32.3,6.3,45,19l166,165 c12.7,12.7,19,27.8,19,45.5S1695.7,640.8,1683,653.5z"></path>
+                    </svg>
+                </div>
+            </div>
+            <div id="backgroundSelection">
+                Background
+            </div>
+        </div>
+    </body>
+</html>
