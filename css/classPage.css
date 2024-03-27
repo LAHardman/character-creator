@@ -4,7 +4,7 @@
     align-items: center;
     border: 1px solid rgb(177, 177, 177);
     border-radius: 5px;
-    width: 30%;
+    width: 300px;
     position: relative;
     font-size: 18px;
     font-weight: bold;
@@ -14,4 +14,10 @@
 }
 .classLabel {
     cursor: pointer;
+}
+#classSelection {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    width: 300px;
 }
